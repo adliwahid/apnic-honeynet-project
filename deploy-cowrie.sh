@@ -5,7 +5,7 @@ URL=$1
 DEPLOY=$2
 ARCH=$4
 SERVER=$(echo ${URL} | awk -F/ '{print $3}')
-IP_ADDR
+
 
 echo 'Creating docker-compose.yml...'
 cat << EOF > ./docker-compose.yml
