@@ -16,8 +16,6 @@ services:
     volumes:
       - ./cowrie.sysconfig:/etc/default/cowrie:z
       - ./cowrie:/etc/cowrie:z
-      - ./logs:/opt/cowrie/var/log/cowrie:z
-      - ./downloads:/opt/cowrie/var/lib/cowrie/downloads:z
     ports:
       - "22:2222"
       - "23:2223"
